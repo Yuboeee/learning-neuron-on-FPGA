@@ -16,7 +16,7 @@ module neuron #(parameter layerNo=0,neuronNo=0,numWeight=784,dataWidth=16,sigmoi
     output reg      outvalid   
     );
     
-    parameter addressWidth = $clog2(numWeight); //the 'addressWidth' is log of number of weights
+    parameter addressWidth = $clog2(numWeight); //the 'addressWidth' is log of number of weights 向上取整
     
     reg         wen;
     wire        ren;
